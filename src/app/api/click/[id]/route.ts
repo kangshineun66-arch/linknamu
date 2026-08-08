@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import clientPromise from "@/lib/mongodb";
+import getMongoClient from "@/lib/mongodb";
 
 export async function POST(
   _request: Request,
@@ -7,7 +7,7 @@ export async function POST(
 ) {
   const { id } = await params;
 
-  const client = await clientPromise;
+  const client = await getMongoClient();
   const db = client.db();
 
   await db

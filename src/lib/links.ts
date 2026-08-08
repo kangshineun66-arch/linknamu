@@ -11,14 +11,30 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  name: "홍길동",
-  bio: "개발자 · 만드는 것을 좋아합니다",
-  photoUrl: "/profile.svg",
+  name: "강신은",
+  bio: "공기업인 : 법률(건설법), AI에 관심이 많아요",
+  photoUrl: "/me.jpg",
 };
 
 export const links: LinkItem[] = [
-  { id: "facebook", label: "Facebook", url: "https://facebook.com" },
-  { id: "instagram", label: "Instagram", url: "https://instagram.com" },
-  { id: "blog", label: "블로그", url: "https://example.com/blog" },
-  { id: "github", label: "GitHub", url: "https://github.com" },
+  {
+    id: "facebook",
+    label: "🐴 페이스북",
+    url: "https://www.facebook.com/gangsin.eun",
+  },
+  {
+    id: "instagram",
+    label: "🐯 인스타그램",
+    url: "https://www.instagram.com/shin_eun_kang",
+  },
+  {
+    id: "blog",
+    label: "🦀 블로그",
+    url: "https://blog.naver.com/ksemax",
+  },
+  {
+    id: "email",
+    label: "🦜 이메일",
+    url: "mailto:kangshineun66@gmail.com",
+  },
 ];

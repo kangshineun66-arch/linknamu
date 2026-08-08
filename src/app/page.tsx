@@ -4,10 +4,10 @@ import { profile, links } from "@/lib/links";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 items-start justify-center bg-zinc-50 px-4 py-16 dark:bg-black">
-      <main className="flex w-full max-w-md flex-col items-center gap-8">
+    <div className="flex flex-1 items-start justify-center px-6 py-20 sm:px-8">
+      <main className="flex w-full max-w-md flex-col items-center gap-10">
         <Profile profile={profile} />
-        <div className="flex w-full flex-col gap-3">
+        <div className="flex w-full flex-col gap-5">
           {links.map((link) => (
             <LinkCard key={link.id} link={link} />
           ))}
